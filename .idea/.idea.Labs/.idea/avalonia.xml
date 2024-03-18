@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Lab1/App.axaml" value="Lab1/Lab1.csproj" />
+        <entry key="Lab1/Views/AddItemView.axaml" value="Lab1/Lab1.csproj" />
+        <entry key="Lab1/Views/MainWindow.axaml" value="Lab1/Lab1.csproj" />
+        <entry key="Lab1/Views/ToDoListView.axaml" value="Lab1/Lab1.csproj" />
+        <entry key="Lab_1/Views/AddItemView.axaml" value="Lab_1/Lab_1.csproj" />
+        <entry key="Lab_1/Views/MainView.axaml" value="Lab_1/Lab_1.csproj" />
+        <entry key="Lab_1/Views/MainWindow.axaml" value="Lab_1/Lab_1.csproj" />
+        <entry key="Lab_1/Views/TodoListView.axaml" value="Lab_1/Lab_1.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

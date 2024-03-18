@@ -1,0 +1,26 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:vm="using:Lab_1.ViewModels"
+              mc:Ignorable="d" d:DesignWidth="250" d:DesignHeight="450"
+              x:Class="Lab_1.Views.AddItemView"
+              x:DataType="vm:AddItemViewModel">
+    <DockPanel>
+        <Button DockPanel.Dock="Bottom"
+                HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Center"
+                Command="{Binding CancelCommand}">
+            Назад
+        </Button>
+        <Button DockPanel.Dock="Bottom"
+                HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Center"
+                Command="{Binding OkCommand}">
+            ОК
+        </Button>
+        <TextBox AcceptsReturn="True"
+                 Text="{Binding Description}"
+                 Watermark="Введите планируемое дело" />
+    </DockPanel>
+</UserControl>

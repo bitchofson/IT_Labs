@@ -1,0 +1,44 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:local="clr-namespace:Lab_1.Models"
+              mc:Ignorable="d" d:DesignWidth="250" d:DesignHeight="450"
+              xmlns:vm="using:Lab_1.ViewModels"
+              x:DataType="vm:TodoListViewModel"
+              x:Class="Lab_1.Views.TodoListView">
+    
+    <DockPanel>
+            <Button DockPanel.Dock="Bottom"
+                    HorizontalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    x:CompileBindings="False"
+                    Command="{Binding $parent[Window].DataContext.ClearItems}">
+                Очистить
+            </Button>
+            <Button DockPanel.Dock="Bottom"
+                    HorizontalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    x:CompileBindings="False"
+                    Command="{Binding $parent[Window].DataContext.RemoveItem}">
+                Удалить последний элемент
+            </Button>
+            <Button DockPanel.Dock="Bottom"
+                    HorizontalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    x:CompileBindings="False"
+                    Command="{Binding $parent[Window].DataContext.AddItem}">
+                Добавить элемент
+            </Button>
+        
+        <ItemsControl ItemsSource="{Binding ListItems}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate x:DataType="local:ToDoItem">
+                    <CheckBox Margin="4"
+                              Content="{Binding Description}">
+                    </CheckBox>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </DockPanel>
+</UserControl>
