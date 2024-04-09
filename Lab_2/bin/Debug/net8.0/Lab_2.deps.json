@@ -12,7 +12,9 @@
           "Avalonia.Desktop": "11.0.10",
           "Avalonia.Diagnostics": "11.0.10",
           "Avalonia.Fonts.Inter": "11.0.10",
-          "Avalonia.Themes.Fluent": "11.0.10"
+          "Avalonia.Themes.Fluent": "11.0.10",
+          "ReactiveUI": "18.3.0.0",
+          "System.Reactive": "5.0.0.0"
         },
         "runtime": {
           "Lab_2.dll": {}
@@ -872,6 +874,22 @@
             "fileVersion": "0.15.0.0"
           }
         }
+      },
+      "ReactiveUI/18.3.0.0": {
+        "runtime": {
+          "ReactiveUI.dll": {
+            "assemblyVersion": "18.3.0.0",
+            "fileVersion": "18.3.1.49589"
+          }
+        }
+      },
+      "System.Reactive/5.0.0.0": {
+        "runtime": {
+          "System.Reactive.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.1"
+          }
+        }
       }
     }
   },
@@ -1356,6 +1374,16 @@
       "sha512": "sha512-QVo/Y39nTYcCKBqrZuwHjXdwaky0yTQPIT3qUTEEK2MZfDtZWrJ2XyZ59zH8LBgB2fL5cWaTuP2pBTpGz/GeDQ==",
       "path": "tmds.dbus.protocol/0.15.0",
       "hashPath": "tmds.dbus.protocol.0.15.0.nupkg.sha512"
+    },
+    "ReactiveUI/18.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Reactive/5.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

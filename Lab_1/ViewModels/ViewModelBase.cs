@@ -2,6 +2,4 @@
 
 namespace Lab_1.ViewModels;
 
-public class ViewModelBase : ReactiveObject
-{
-}
+public class ViewModelBase : ReactiveObject;

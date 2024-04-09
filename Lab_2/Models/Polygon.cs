@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Lab_2.Models;
 
@@ -8,7 +7,7 @@ public class Polygon(List<Point> vertices) : Shape(vertices[0].X, vertices[0].Y)
 {
     protected List<Point> _vertices = vertices; // Список вершин полигона
 
-    public (double x, double y) Center
+    public new (double x, double y) Center
     {
         get
         {
@@ -34,7 +33,8 @@ public class Polygon(List<Point> vertices) : Shape(vertices[0].X, vertices[0].Y)
 
     public override string BaseInformation()
     {
-        return "Polygon(Center: " + Center + " Area: " + Area() + " )";
+        if (_vertices.Count < 3) return "Мало точек для прощёта информации о фигуре!";
+        return " Многоугольник\n Центр: " + Center + "\n Площадь: " + Area();
     }
 
     public override double Area()
@@ -47,10 +47,5 @@ public class Polygon(List<Point> vertices) : Shape(vertices[0].X, vertices[0].Y)
         }
 
         return Math.Abs(area / 2);
-    }
-
-    public override (double width, double height) BoundingBox()
-    {
-        throw new System.NotImplementedException();
     }
 }

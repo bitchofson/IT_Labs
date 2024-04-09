@@ -125,3 +125,7 @@
 /home/xzqtbl/RiderProjects/Labs/Lab_2/obj/Debug/net8.0/Lab_2.csproj.CopyComplete
 /home/xzqtbl/RiderProjects/Labs/Lab_2/obj/Debug/net8.0/Lab_2.genruntimeconfig.cache
 /home/xzqtbl/RiderProjects/Labs/Lab_2/obj/Debug/net8.0/ref/Lab_2.dll
+/home/xzqtbl/RiderProjects/Labs/Lab_2/bin/Debug/net8.0/ReactiveUI.dll
+/home/xzqtbl/RiderProjects/Labs/Lab_2/bin/Debug/net8.0/System.Reactive.dll
+/home/xzqtbl/RiderProjects/Labs/Lab_2/bin/Debug/net8.0/ReactiveUI.xml
+/home/xzqtbl/RiderProjects/Labs/Lab_2/bin/Debug/net8.0/System.Reactive.xml

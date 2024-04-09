@@ -1,5 +1,3 @@
-using System;
-
 namespace Lab_2.Models;
 
 public class Line(Point pointStart, Point pointEnd)
@@ -11,7 +9,6 @@ public class Line(Point pointStart, Point pointEnd)
     public Point PointStart
     {
         get;
-        set;
     } = pointStart;
 
     public Point PointEnd
@@ -20,22 +17,9 @@ public class Line(Point pointStart, Point pointEnd)
     } = pointEnd;
     
     public override double Area() => 0;
-
-    public override (double width, double height) BoundingBox()
-    {
-        double minX = Math.Min(this.minX, PointStart.X);
-        double minY = Math.Min(this.minY, PointStart.Y);
-        double maxX = Math.Max(this.maxX, PointEnd.X);
-        double maxY = Math.Max(this.maxY, PointEnd.Y);
-        
-        double width = maxX - minX;
-        double height = maxY - minY;
-        
-        return (width, height);
-    }
     
     public override string BaseInformation()
     {
-        return "Line(Center: " + Center + " Area: " + Area() + " BoundingBox: " + BoundingBox() + " )";
+        return " Линия\n Центр: " + Center + "\n Площадь: " + Area();
     }
 }
