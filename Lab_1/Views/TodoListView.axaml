@@ -7,29 +7,28 @@
               xmlns:vm="using:Lab_1.ViewModels"
               x:DataType="vm:TodoListViewModel"
               x:Class="Lab_1.Views.TodoListView">
-    
     <DockPanel>
             <Button DockPanel.Dock="Bottom"
                     HorizontalAlignment="Stretch"
                     HorizontalContentAlignment="Center"
                     x:CompileBindings="False"
                     Command="{Binding $parent[Window].DataContext.ClearItems}">
-                Очистить
-            </Button>
-            <Button DockPanel.Dock="Bottom"
-                    HorizontalAlignment="Stretch"
-                    HorizontalContentAlignment="Center"
-                    x:CompileBindings="False"
-                    Command="{Binding $parent[Window].DataContext.RemoveItem}">
-                Удалить последний элемент
-            </Button>
-            <Button DockPanel.Dock="Bottom"
-                    HorizontalAlignment="Stretch"
-                    HorizontalContentAlignment="Center"
-                    x:CompileBindings="False"
-                    Command="{Binding $parent[Window].DataContext.AddItem}">
-                Добавить элемент
-            </Button>
+            Очистить
+        </Button>
+        <Button DockPanel.Dock="Bottom"
+                HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Center"
+                x:CompileBindings="False"
+                Command="{Binding $parent[Window].DataContext.RemoveItem}">
+            Удалить последний элемент
+        </Button>
+        <Button DockPanel.Dock="Bottom"
+                HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Center"
+                x:CompileBindings="False"
+                Command="{Binding $parent[Window].DataContext.AddItem}">
+            Добавить элемент
+        </Button>
         
         <ItemsControl ItemsSource="{Binding ListItems}">
             <ItemsControl.ItemTemplate>

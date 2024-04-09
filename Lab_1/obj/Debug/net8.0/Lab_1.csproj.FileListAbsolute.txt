@@ -129,3 +129,4 @@
 /home/xzqtbl/RiderProjects/Labs/Lab_1/obj/Debug/net8.0/Lab_1.csproj.CopyComplete
 /home/xzqtbl/RiderProjects/Labs/Lab_1/obj/Debug/net8.0/Lab_1.genruntimeconfig.cache
 /home/xzqtbl/RiderProjects/Labs/Lab_1/obj/Debug/net8.0/ref/Lab_1.dll
+/home/xzqtbl/RiderProjects/Labs/Lab_1/obj/Debug/net8.0/Lab_1.sourcelink.json
