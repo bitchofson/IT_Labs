@@ -25,6 +25,7 @@ public partial class MainWindow : Window
     {
         _mainWindowViewModel.ClearPoints();
         points.Text = "Точки: [ ]";
+        _mainWindowViewModel.Type = ShapeType.Shape;
         characteristics.Text = "Информация о фигуре";
     }
 
@@ -49,30 +50,30 @@ public partial class MainWindow : Window
 
     private void SplitButtonPoint(object? sender, RoutedEventArgs e)
     {
-        _mainWindowViewModel.Type = ShapeType.Point;
         ClearHandler(sender, e);
+        _mainWindowViewModel.Type = ShapeType.Point;
         characteristics.Text = "Выбрана Точка";
     }
 
     private void SplitButtonLine(object? sender, RoutedEventArgs e)
     {
-        _mainWindowViewModel.Type = ShapeType.Line;
         ClearHandler(sender, e);
+        _mainWindowViewModel.Type = ShapeType.Line;
         characteristics.Text = "Выбрана Линия";
     }
 
     private void SplitButtonPolygon(object? sender, RoutedEventArgs e)
     {
-        _mainWindowViewModel.Type = ShapeType.Polygon;
         ClearHandler(sender, e);
+        _mainWindowViewModel.Type = ShapeType.Polygon;
         characteristics.Text = "Выбран Многоугольник";
 
     }
 
     private void SplitButtonEllipse(object? sender, RoutedEventArgs e)
     {
-        _mainWindowViewModel.Type = ShapeType.Ellipse;
         ClearHandler(sender, e);
+        _mainWindowViewModel.Type = ShapeType.Ellipse;
         characteristics.Text = "Выбран Эллипс";
 
     }

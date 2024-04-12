@@ -6,9 +6,7 @@ namespace Lab_3;
 class Program
 {
     [STAThread]
-    public static void Main(string[] args)
-
-    => BuildAvaloniaApp()
+    public static void Main(string[] args) => BuildAvaloniaApp()
         .StartWithClassicDesktopLifetime(args);
 
     public static AppBuilder BuildAvaloniaApp()
