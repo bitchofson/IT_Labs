@@ -6,7 +6,7 @@ namespace Lab_2.Models;
 public class Polygon(List<Point> vertices) : Shape(vertices[0].X, vertices[0].Y)
 {
     protected List<Point> _vertices = vertices; // Список вершин полигона
-
+    
     public new (double x, double y) Center
     {
         get
